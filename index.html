@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar position-relative navbar-expand-md bg-primary p-5">
+
+    </nav>
+    <div class="container">
+    <div class="card shadow mx-auto" style="width: 30rem">
+        <div class="card-header bg-primary text-light p-1" style="text-align: center;">
+            <strong>Todo List</strong>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-8">
+                    <label for="todo" style="color:blue">Add a new task</label>
+                    <input type="text" class="" id="todo">
+                </div>
+                <div class="col-sm-4 align-self-end custom-control custom-button">
+                    <button id="submit" type="button" for="todo" class="btn btn-primary" onclick="addItem()">Add Todo</button>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush pt-3" id="list">
+
+            </ul>  
+                 
+        </div>
+        <div class="custom-control custom-button pb-4 pt-4">
+            <button type="button" class="btn btn-danger" onclick="deleteItem()">Delete Selected</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
