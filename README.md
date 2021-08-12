@@ -7,3 +7,5 @@ index.html
 style.css
 script.js
 
+To use: Open the index.html in your browser
+
